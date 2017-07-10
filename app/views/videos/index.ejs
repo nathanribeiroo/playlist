@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Cortex - DS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/dropzone.css">
+  </head>
+  <body>
+    
+    <%- include('../layouts/elements/menu', {}); %>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <form id="my" action="/upload" enctype="multipart/form-data" method="post" class="dropzone" id="my-awesome-dropzone">
+
+                
+                </form>
+            </div>
+            <div class="col-sm-6">
+                col-sm-8
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/tether.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/dropzone.js"></script>
+
+    <script type="text/javascript">
+                    Dropzone.options.my = {
+                    paramName: "photo", // The name that will be used to transfer the file
+                    maxFilesize: 1, // MB
+                    url: "/upload"
+                    };
+                </script>
+  </body>
+</html>
