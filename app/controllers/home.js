@@ -1,3 +1,3 @@
 module.exports.index = (app, req, res) => {
-    res.render("home/index");
+    res.render("home/index", {usuario : req.session.usuario});
 }

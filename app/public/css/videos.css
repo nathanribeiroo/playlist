@@ -1,0 +1,14 @@
+.message-main {
+    font-size: 20px;
+    color: #292b2c;
+}
+
+.message-second {
+    font-size: 16px;
+}
+
+.dropzone {
+    border: 2px dashed #292b2c;
+    border-radius: 5px;
+    background: white;
+}

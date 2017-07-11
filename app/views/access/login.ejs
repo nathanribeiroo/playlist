@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Cortex - DS</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+  </head>
+  <body>
+<div class="container-fluid">
+    <form class="form-signin" action="/access/authenticate" method="post">
+            <label class="title-login"><i class="fa fa-desktop fa-2x" aria-hidden="true"></i><br>Digital Signage</label>
+            <hr >
+
+            <% if(validacao != "") { %>
+                <p class="text-danger"><%= validacao %></p>
+            <% } %>
+            <input type="text" id="usuario" name="usuario_login" class="form-control" placeholder="Usuário" required>
+            
+            <input type="password" id="senha" name="usuario_senha" class="form-control" placeholder="Senha" required>
+           
+        <button class="btn btn-md btn-outline-primary btn-block" type="submit">Entrar</button>
+    </form>
+</div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/tether.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+  </body>
+</html>

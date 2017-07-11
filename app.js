@@ -5,3 +5,4 @@ var app = require('./config/server');
 app.listen(app.config.ini.port, () => {
 	console.log('[OK] Servidor online');
 })
+

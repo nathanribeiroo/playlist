@@ -9,13 +9,24 @@
       <li class="nav-item">
         <a class="nav-link" href="/">Dashboard</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="/videos">Gerenciar Vídeos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/playlist">Criar Playlist</a>
       </li>
     </ul>
-    
+    <ul class="navbar-nav mr-right">
+      <li class="nav-item">
+        <a class="nav-link" href="#">  
+          <%= usuario.usuario_nome %> <%= usuario.usuario_sobrenome %>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/access/logout"> <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+      </li>
+    </ul>
   </div>
 </nav>
+
+<!--<img src="/img/users/default.png" width="22" height="22" class="d-inline-block align-top rounded-circle" alt="">-->

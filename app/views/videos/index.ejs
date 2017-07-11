@@ -6,25 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Cortex - DS</title>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/default.css">
     <link rel="stylesheet" href="/css/dropzone.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/videos.css">
   </head>
   <body>
     
-    <%- include('../layouts/elements/menu', {}); %>
+    <%- include('../layouts/elements/menu', {usuario : usuario}); %>
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-12">
+                <div class="box-header">
+                    <i class="fa fa-cloud-upload" aria-hidden="true"></i> Carregar novos vídeos para o servidor
+                </div>
                 <form id="my" action="/upload" enctype="multipart/form-data" method="post" class="dropzone" id="my-awesome-dropzone">
-
+                    <div class="dz-message message-main">
+                        Solte os vídeos aqui ou clique para selecionar.<br>
+                        <span class="note message-second">(Vídeos de até <strong>150MB</strong> na extensão <strong>.MOV</strong>)</span>
+                    </div>
                 
                 </form>
             </div>
-            <div class="col-sm-6">
-                col-sm-8
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-header">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i> Lista de vídeos
+                </div>
+                <table class="table table-striped">
+                <thead class="table-inverse">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data de Criação</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    </tr>
+                    <tr>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    </tr>
+                    <tr>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    </tr>
+                </tbody>
+                </table>
             </div>
         </div>
     </div>
